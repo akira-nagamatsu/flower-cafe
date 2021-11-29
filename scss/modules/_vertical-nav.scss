@@ -1,0 +1,16 @@
+.vertical-nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        padding-right: 30px;
+        &:last-child {
+            padding-right: 0;
+        }
+        a:hover {
+            opacity: .8;
+            transition: opacity .3s;
+        }
+    }
+}

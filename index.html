@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Cafe</title>
+    <meta name="description" content="コーヒーとお花のカフェFlower Cafeのサイト">
+    <link rel="stylesheet" href="./css/modern-css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel=”icon” href="favicon.ico">
+    <!-- インデックスブロック -->
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-logo-wrapper">
+            <a href="#">
+                <img src="images/logo.png" alt="Flower Cafe" class="header-logo">   
+            </a>
+        </h1>
+        <nav class="header-nav">
+            <ul class="vertical-nav">
+                <li><a href="./index.html" class="current">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./access.html">Access</a></li>
+                <li><a href="./recruit.html">Recruit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="humburger-btn">
+        <div class="humburger-btn_line"></div>
+    </div>
+
+    <div class="humburger-nav-wrapper">
+        <nav class="humburger-nav">
+            <ul class="humburger-nav_list">
+                <li class="humburger-nav_item"><a href="./index.html" class="current">Home</a></li>
+                <li class="humburger-nav_item"><a href="./menu.html">Menu</a></li>
+                <li class="humburger-nav_item"><a href="./access.html">Access</a></li>
+                <li class="humburger-nav_item"><a href="./recruit.html">Recruit</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="fv">
+        <div class="fv_texts">
+            <p class="fv_texts_main fadein">Coffee <span class="fontsize32to64">&</span> Flower</p>
+            <p class="fv_texts_sub">コーヒーとお花のカフェ</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="main-contents">
+                <div class="main-contents-left">
+                    <div class="shop-summary">
+                        <p class="shop-summary_text">
+                            あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>
+                            またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど。
+                        </p>
+                        <div class="vertical-link">
+                            <ul class="vertical-link_wrapper">
+                                <li><a href="./menu.html">Menu</a></li>
+                                <li><a href="./access.html">Access</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <p>
+                            <img src="images/profile.jpg" alt="プロフィール画像" class="profile_img">
+                        </p>
+                        <p class="profile_text">
+                            そのころわたくしは、モリーオ市の博物局に勤めて居りました。十八等官でしたから役所のなかでも、ずうっと下の方でしたし俸給ほうきゅうもほんのわずかでしたが、受持ちが標本の採集や整理で生れ付き好きなことでしたから、わたくしは毎日ずいぶん愉快にはたらきました。
+                            殊にそのころ、モリーオ市では競馬場を<a href="https://www.yahoo.co.jp/" target="_blank" rel="noopener noreferrer" class="underlined-link">植物園</a>に拵こしらえ直すというので、その景色のいいまわりにアカシヤを植え込んだ広い地面が、切符売場や信号所の建物のついたまま、わたくしどもの役所の方へまわって来たものですから、わたくしはすぐ宿直という名前で月賦で買った小さな蓄音器と二十枚ばかりのレコードをもって、その番小屋にひとり住むことになりました。
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="main-contents-right">
+                    <picture class="concept-img">
+                        <!--<source media="(min-width: 320px)" srcset="small.jpg 1x, small@2x.jpg 2x">--->
+                        <source srcset="images/concept_pc.jpg" media="(min-width: 768px)"/>
+                        <img src="images/concept_sp.jpg" alt="ショップコンセプト画像">
+                    </picture>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul class="vertical-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./access.html">Access</a></li>
+                <li><a href="./recruit.html">Recruit</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy;FlowerCafe</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

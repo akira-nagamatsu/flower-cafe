@@ -1,0 +1,16 @@
+@use './../base/_mediaquery.scss';
+
+.shop-summary {
+    margin-bottom: 30px;
+    .shop-summary_text {
+        margin-bottom: 44px;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        @include mediaquery.tab {
+            font-size: 1.6rem;
+        };
+    }
+    .shop-summary_text.mb0 {
+        margin-bottom: 0;
+    }
+}

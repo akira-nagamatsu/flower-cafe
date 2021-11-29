@@ -1,0 +1,27 @@
+@use './../base/_mediaquery.scss';
+
+.footer {
+    padding: 40px 0;
+    background-color: #C32D4D;
+    @include mediaquery.tab {
+        padding: 50px 0;
+    };
+    .vertical-nav {
+        @include mediaquery.tab {
+            margin-bottom: 25px;
+        };
+        a {
+            color: #fff;
+            font-family: 'EB Garamond', serif;
+            @include mediaquery.tab {
+                font-size: 2rem;
+            };
+        }
+    }
+    .copyright {
+        color: #F9B1C0;
+        font-size: 1.2rem;
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+    }
+}

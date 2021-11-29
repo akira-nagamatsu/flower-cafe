@@ -1,0 +1,16 @@
+@use './../base/_mediaquery.scss';
+
+.fontsize32 {
+    font-size: 3.2rem;
+}
+
+.fontsize32to64 {
+    font-size: 3.2rem;
+    @include mediaquery.tab {
+        font-size: 6.4rem;
+    };
+}
+
+.fontsize14 {
+    font-size: 1.4rem;
+}

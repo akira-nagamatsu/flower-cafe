@@ -1,0 +1,13 @@
+.bullet-list {
+    & > li {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    .bullet-list_child {
+        & > li {
+            padding-left: 20px;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+    }
+}

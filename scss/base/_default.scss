@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+}
+
+//font-family: 'Cormorant Garamond', serif;
+//font-family: 'EB Garamond', serif;
+//font-family: 'Noto Sans JP', sans-serif;
+
+body {
+  line-height: 1.6;
+  font-size: 1.6em;//必ずem!!
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+    list-style: none;
+}
+  
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  // iOSのフィールド内側のシャドウを無くす
+  appearance: none;
+}
+  
+input::-ms-clear,
+input::-ms-reveal {
+  // IE11のフィールドの×ボタンを非表示にする
+  visibility: hidden;
+}

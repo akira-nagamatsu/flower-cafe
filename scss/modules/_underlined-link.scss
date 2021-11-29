@@ -1,0 +1,11 @@
+.underlined-link {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    color: #C32D4D;
+    &:hover {
+        text-decoration: none;
+    }
+    &.eb {
+        font-family: 'EB Garamond', serif;
+    }
+}

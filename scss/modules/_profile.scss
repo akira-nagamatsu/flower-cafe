@@ -1,0 +1,22 @@
+@use './../base/_mediaquery.scss';
+
+.profile {
+    margin-bottom: 72px;
+    font-size: 1.4rem;
+    @include mediaquery.tab {
+        margin-bottom: 0;
+    };
+    .profile_img {
+        width: 110px;
+        height: 110px;
+        margin-right: 10px;
+        border-radius: 50%;
+        float: left;
+        @include mediaquery.tab {
+            margin-right: 15px;
+        };
+    }
+    .profile_text {
+        line-height: 1.8;
+    }
+}

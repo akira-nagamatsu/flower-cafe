@@ -1,0 +1,25 @@
+@use './../base/_mediaquery.scss';
+
+.vertical-link {
+    .vertical-link_wrapper {
+        display: flex;
+        li {
+            padding-right: 20px;
+            a {
+                font-size: 1.5rem;
+                text-decoration: underline;
+                color: #C32D4D;
+                font-family: 'Cormorant Garamond', serif;
+                @include mediaquery.tab {
+                    font-size: 1.6rem;
+                };
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+}

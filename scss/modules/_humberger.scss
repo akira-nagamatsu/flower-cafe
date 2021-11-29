@@ -1,0 +1,101 @@
+@use './../base/_mediaquery.scss';
+
+.humburger-btn {
+    width: 48px;
+    height: 48px;
+    background-color: #C32D4D;
+    border-radius: 0 0 0 8px;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+    @include mediaquery.tab {
+        display: none;
+    };
+    .humburger-btn_line {
+        width: 28px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color .5s;
+        &::before {
+            content: '';
+            width: 28px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform .5s; 
+        }
+        &::after {
+            content: '';
+            width: 28px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: transform .5s; 
+        }
+    }
+}
+
+.humburger-btn.cross {
+    .humburger-btn_line {
+        background-color: rgba(255,255,255,0);
+        transition: background-color .5s;
+        &::before {
+            transform: translate(-50%,9px) rotate(45deg);      
+            transition: transform .5s;
+            z-index: 30;
+        }
+        &::after {
+            transform: translate(-50%,-7px) rotate(-45deg);      
+            transition: transform .5s;
+            z-index: 30;
+        }
+    }
+}
+
+.humburger-nav-wrapper {
+    display: none;
+    width: 100vw;      
+    height: 100vh;      
+    position: fixed;      
+    top: 0;      
+    left: 0;       
+    z-index: 20;
+    .humburger-nav {
+        width: 100%;        
+        height: 100%;        
+        background-color: #C32D4D;       
+        .humburger-nav_list {
+            display: block;        
+            position: absolute;        
+            top: 50%;        
+            left: 50%;        
+            transform: translate(-50%,-50%);        
+            text-align: center;
+            .humburger-nav_item {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: #fff;
+                    font-size: 2.4rem;
+                    font-family: 'EB Garamond', serif;
+                    &.current {
+                        color: #EF90A4;
+                    }
+                }
+            }
+        }
+    }
+}
+

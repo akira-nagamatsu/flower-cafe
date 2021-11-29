@@ -1,0 +1,10 @@
+@use './../base/_mediaquery.scss';
+
+.heading2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    @include mediaquery.tab {
+        font-size: 2.4rem;
+    };
+} 

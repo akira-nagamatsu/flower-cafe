@@ -1,0 +1,19 @@
+@use './../base/_mediaquery.scss';
+
+.main-contents {
+    @include mediaquery.tab {
+        display: flex;
+        align-items: flex-start;
+    };
+    .main-contents-left {
+        @include mediaquery.tab {
+            flex-basis: 50%;
+        };
+    }
+    .main-contents-right {
+        @include mediaquery.tab {
+            flex-basis: 50%;
+            padding-left: 50px;
+        };
+    }
+}
